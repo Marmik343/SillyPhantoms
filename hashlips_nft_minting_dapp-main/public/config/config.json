@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xC6E2cDDcc93140359a68183b0d478d315DeD5a89",
+  "SCAN_LINK": "https://polygonscan.com/token/0xC6E2cDDcc93140359a68183b0d478d315DeD5a89",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "Silly Phantoms",
+  "SYMBOL": "SP",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 35000000000000000000,
+  "DISPLAY_COST": 35,
+  "GAS_LIMIT": 3000000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/SillyPhantoms",
+  "SHOW_BACKGROUND": true
+}

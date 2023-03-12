@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/config/theme.css" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Silly Phantoms</title>
+    <meta name="description" content="Mint your Silly Phantoms NFT" />
+    <!-----------------------------------------------------------------------------------NAV BAR----------------------------------->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Silly Phantoms</label>
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#rm">Road map</a></li>
+        <li><a href="#fqs">FAQs</a></li>
+        <li><a href="#scroll_mtt">Meet the team</a></li>
+        <li><a href="https://discord.gg/Ajj2CvDk63" target="_blank">Discord</a></li>
+        <li><a href="https://twitter.com/SillyPhantoms" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/silly_phantoms" target="_blank">Instagram</a></li>
+        <li><a href="https://opensea.io/SillyPhantoms" target="_blank">OpenSea</a></li>
+        
+      </ul>
+
+    </nav>
+  
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+<!----------------------------------------ABOUT-------------------------------------------------------------------------------->
+<div id = 'About'>
+  <p id = "name">
+    Who Are Silly Phantoms?
+  </p>
+  <p id="nft">
+    Silly Phantoms is a collection of 10000 unique Phantoms , that run the most petrifying activities on the Polygon Blockchain. Welcome to the alternate dimension where Humans and Phantoms evolve to take a different route to conquer the world, every Phantom is unique and own variety of  items with different rarities.
+    Each Silly Phantoms NFT holder has access to exclusive events on Discord, Twitter, and more.
+  </p>
+<div class="container_about">
+  <div class="row team-row">
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member-ab text-center">
+        <div class="team-img-ab">
+          <img class="epic" id="common_glow" src="CommonGIF.gif" alt="">
+        </div>
+        <h6 id="text_1">COMMON</h6>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member-ab text-center">
+        <div class="team-img-ab">
+          <img class="epic" id="epic_glow" src="EpicGif.gif" alt="">
+        </div>
+        <h6 id='text_2'>EPIC</h6>
+    
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member-ab last text-center">
+        <div class="team-img-ab">
+          <img src="LegendaryGif.gif" alt="" class="epic" id="legendary_glow">
+        </div>
+        <h6 id='text_3'>LEGENDARY</h6>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--------------------------------------------------CANVAS----------------------------------------------------------------------->
+<canvas id="canvas"></canvas>
+
+<!----------------------------------------ROAD-MAP----------------------------------------------------------------------------->
+<div id="rm" >
+<div class="container_rm">
+  <p id="Roadmap">ROAD MAP</p>
+  <div class="timeline">
+    <ul>
+      <li>
+        <div class="timeline-content">
+      
+          <h1>25%</h1>
+          <p>
+            o Drawing the Silly Phantoms<br><br>
+            o Generating 10000 unique SPs<br><br>
+            o Launching Discord, Twitter, Instagram, Smart Contract and the Website<br><br>
+            o Creating Our Community</p>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          
+          <h1>50%</h1>
+          <p>
+            o Launching Mini Games and Events(FanArts,  Meme challenge, etc) for giveaways and advertising<br><br>
+            o Whitelist Mint (Pre-Sale)<br><br>
+            o Getting Listed on market place (OpenSea)<br><br>
+            o Releasing SP Public Sale for our community <br><br>
+            o Publishing the rarity tools
+          </p>
+        
+          </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          
+          <h1>75%</h1>
+          <p>
+            o Releasing the $Silly Token for distributing royalties and stake back to community<br><br>
+            o Using SP community fund to sweep the floor<br><br>
+            o Releasing Merchandise Store for our community<br><br>
+            o First ones to mint the Legendary SP will be rewarded with USDT OR Matic OR one SP NFT OR Merch  
+          </p>
+          </div>
+      </li>
+      <li>
+        <div class="timeline-content">
+          
+          <h1>100%</h1>
+          <p>
+            o Silly Phantom Game creation to Earn $Silly Tokens with each level as per the community response<br><br>
+            o Buying of land in Metaverse and creating an Arcade Gaming Shop<br><br>
+            o Collaborating with Projects and Artists to expand our community<br><br>
+            o Making of Next Generation 3D Silly Phantoms and Airdropping to all our SP holders
+          </p>
+          </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+<!----------------------------------------------------FAQs--------------------------------------------------------------------->  
+
+  <div id="fqs"> 
+    <div class="container_faq">
+      <p id="Faqs">FAQs</p>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">What is Silly Phantoms?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Silly Phantoms is a collection of 10000 unique Phantoms , that run the most petrifying activities on the Polygon Blockchain.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">When is the official launch?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              The launch date for both Pre-Sale and Public-Sale will be announced soon. Stay tuned on our Discord server.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">What is going to be the mint price?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Our Pre-Sale price is yet to be decided. Whitelisted members can mint during the Pre-Sale.<br><br>
+              Our Public-Sale price is yet to be decided.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">How do I get Whitelisted?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              You can get whitelisted by following the steps on our Discord server.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title">How many can I mint?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Upto 10 NFTs are mintable per transaction.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title">What wallet can I use?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Adopters can use Meta Mask wallet extension.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Are there collaborations planned with any other projects?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              We are already in discussions with several popular communities in the NFT space. We are excited about all upcoming partnerships that are on the horizon!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </div>
+<!----------------------------------------------------------Meet the Team------------------------->
+<div id="scroll_mtt" class="container_mtt">
+
+  <div class="row heading">
+    <div class="col-md-6 col-md-offset-3">
+      <p id = 'mtt' class="text-center bottom-line">Meet Our Team</p>
+    </div>
+  </div>
+
+  <div class="row team-row">
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member text-center">
+        <div class="team-img">
+          <img id='edit' src="79.png" alt="">
+        </div>
+        <h6 class="team-title">@four_horsemen_</h6>
+        <span id='designation'>Art Director</span>
+      </div>
+    </div>
+    <!-- end team member -->
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member text-center">
+        <div class="team-img">
+          <img id='edit' src="72.png" alt="">
+        </div>
+        <h6 class="team-title">@marmikpatani_343</h6>
+        <span id='designation'>Website Designer</span>
+      </div>
+    </div>
+    <!-- end team member -->
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member last text-center">
+        <div class="team-img">
+          <img id='edit' src="88.png" alt="">
+        </div>
+        <h6 class="team-title">@abhishek_kam1111</h6>
+        <span id='designation'>Blockchain Developer</span>
+      </div>
+    </div>
+
+    <!-- end team member -->
+
+    <div id='last_two'>
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member last text-center">
+        <div class="team-img">
+          <img id='edit' src="61.png" alt="">
+        </div>
+        <h6 class="team-title">@vipulgarasiyaa</h6>
+        <span id='designation'>Generator Artist</span>
+      </div>
+    </div>
+    <!-- end team member -->
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member last text-center">
+        <div class="team-img">
+          <img id='edit' src="94.png" alt="">
+        </div>
+        <h6 class="team-title">@flash_yolo</h6>
+        <span id='designation'>Community Manager</span>
+      </div>
+    </div>
+    <!-- end team member -->
+    </div>
+  </div>
+  <p id="end">© 2021 THE SILLY PHANTOMS</p>
+</div>
+<!-----------------------------------------------------------------------------Socials----------------------------------->
+
+<!------------------------------------------------------------------END-------------------------------------------------------->
+  
+
+
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up">↑</i></a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+    // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    },5);
+});
+
+
+console.clear()
+console.log('lsakdfalskjdflnksd')
+
+const config = {
+  src: 'Silly_Phantom_Sprite_Sheet.png',
+  rows: 15,
+  cols: 7
+}
+
+// UTILS
+
+const randomRange = (min, max) => min + Math.random() * (max - min)
+
+const randomIndex = (array) => randomRange(0, array.length) | 0
+
+const removeFromArray = (array, i) => array.splice(i, 1)[0]
+
+const removeItemFromArray = (array, item) => removeFromArray(array, array.indexOf(item))
+
+const removeRandomFromArray = (array) => removeFromArray(array, randomIndex(array))
+
+const getRandomFromArray = (array) => (
+  array[randomIndex(array) | 0]
+)
+
+// TWEEN FACTORIES
+
+const resetPeep = ({ stage, peep }) => {
+  const direction = Math.random() > 0.5 ? 1 : -1
+  // using an ease function to skew random to lower values to help hide that peeps have no legs
+  const offsetY = 100 - 250 * gsap.parseEase('power2.in')(Math.random())
+  const startY = stage.height - peep.height + offsetY
+  let startX
+  let endX
+  
+  if (direction === 1) {
+    startX = -peep.width
+    endX = stage.width
+    peep.scaleX = 1
+  } else {
+    startX = stage.width + peep.width
+    endX = 0
+    peep.scaleX = -1
+  }
+  
+  peep.x = startX
+  peep.y = startY
+  peep.anchorY = startY
+  
+  return {
+    startX,
+    startY,
+    endX
+  }
+}
+
+const normalWalk = ({ peep, props }) => {
+  const {
+    startX,
+    startY,
+    endX
+  } = props
+
+  const xDuration = 10
+  const yDuration = 0.25
+  
+  const tl = gsap.timeline()
+  tl.timeScale(randomRange(0.5, 1.5))
+  tl.to(peep, {
+    duration: xDuration,
+    x: endX,
+    ease: 'none'
+  }, 0)
+  tl.to(peep, {
+    duration: yDuration,
+    repeat: xDuration / yDuration,
+    yoyo: true,
+    y: startY - 10
+  }, 0)
+    
+  return tl
+}
+
+const walks = [
+  normalWalk,
+]
+
+// CLASSES
+
+class Peep {
+  constructor({
+    image,
+    rect,
+  }) {
+    this.image = image
+    this.setRect(rect)
+    
+    this.x = 0
+    this.y = 0
+    this.anchorY = 0
+    this.scaleX = 1
+    this.walk = null
+  }
+  
+  setRect (rect) {
+    this.rect = rect
+    this.width = rect[2]
+    this.height = rect[3]
+    
+    this.drawArgs = [
+      this.image,
+      ...rect,
+      0, 0, this.width, this.height
+    ]  
+  }
+  
+  render (ctx) {
+    ctx.save()
+    ctx.translate(this.x, this.y)
+    ctx.scale(this.scaleX, 1)
+    ctx.drawImage(...this.drawArgs)
+    ctx.restore()
+  }
+}
+
+// MAIN
+
+const img = document.createElement('img')
+img.onload = init
+img.src = config.src
+
+const canvas = document.querySelector('#canvas')
+const ctx = canvas.getContext('2d')
+
+const stage = {
+  width: 0,
+  height: 0,
+}
+
+const allPeeps = []
+const availablePeeps = []
+const crowd = []
+
+function init () {  
+  createPeeps()
+  
+  // resize also (re)populates the stage
+  resize()
+
+  gsap.ticker.add(render)
+  window.addEventListener('resize', resize)
+}
+
+function createPeeps () {
+  const {
+    rows,
+    cols
+  } = config
+  const {
+    naturalWidth: width,
+    naturalHeight: height
+  } = img
+  const total = rows * cols
+  const rectWidth = width / rows
+  const rectHeight = height / cols
+  
+  for (let i = 0; i < total; i++) {
+    allPeeps.push(new Peep({
+      image: img,
+      rect: [
+        (i % rows) * rectWidth,
+        (i / rows | 0) * rectHeight,
+        rectWidth,
+        rectHeight,
+      ]
+    }))
+  }  
+}
+
+function resize () {
+  stage.width = canvas.clientWidth
+  stage.height = canvas.clientHeight
+  canvas.width = stage.width * devicePixelRatio
+  canvas.height = stage.height * devicePixelRatio
+  
+  crowd.forEach((peep) => {
+    peep.walk.kill()
+  })
+  
+  crowd.length = 0
+  availablePeeps.length = 0
+  availablePeeps.push(...allPeeps)
+  
+  initCrowd()
+}
+
+function initCrowd () {
+  while (availablePeeps.length) {
+    // setting random tween progress spreads the peeps out
+    addPeepToCrowd().walk.progress(Math.random())
+  }
+}
+
+function addPeepToCrowd () {
+  const peep = removeRandomFromArray(availablePeeps)
+  const walk = getRandomFromArray(walks)({
+    peep,
+    props: resetPeep({
+      peep,
+      stage,
+    })
+  }).eventCallback('onComplete', () => {
+    removePeepFromCrowd(peep)
+    addPeepToCrowd()
+  })
+  
+  peep.walk = walk
+  
+  crowd.push(peep)
+  crowd.sort((a, b) => a.anchorY - b.anchorY)
+  
+  return peep
+}
+
+function removePeepFromCrowd (peep) {
+  removeItemFromArray(crowd, peep)
+  availablePeeps.push(peep)
+}
+
+function render () {
+  canvas.width = canvas.width
+  ctx.save()
+  ctx.scale(devicePixelRatio, devicePixelRatio)
+  
+  crowd.forEach((peep) => {
+    peep.render(ctx)
+  })
+  
+  ctx.restore()
+}
+
+</script>
+
+  </body>
+  
+</html>
